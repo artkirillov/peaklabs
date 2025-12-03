@@ -1,39 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peak Labs</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, sans-serif;
-      background: #f7f7f7;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: #333;
-    }
-    .container {
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.7;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peak Labs - Contract iOS Development and App Innovation">
+    <title>Peak Labs - Contract iOS Development</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Peak Labs</h1>
-    <p>This domain is parked. Something cool is on the way.</p>
-  </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.jpeg" alt="Peak Labs Logo">
+                <span>Peak Labs</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#apps" class="nav-link">Apps</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Peak Labs</h1>
+            <p class="hero-subtitle">Apple Platform Development Studio</p>
+            <p class="hero-description">Building high-quality, data-driven iOS experiences that empower users to live healthier, more productive lives.</p>
+            <a href="#apps" class="cta-button">Explore Our Apps</a>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="section-container">
+            <h2>Our Mission</h2>
+            <p>We specialize in crafting innovative iOS applications and providing expert contract development services. Our focus is on health, wellness, and productivity—leveraging Apple's latest technologies to create meaningful user experiences.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-container">
+            <h2>Contract iOS Development</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Swift & SwiftUI</h3>
+                    <p>Modern, efficient iOS development using the latest Apple frameworks and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Apple Health Integration</h3>
+                    <p>Seamless integration with Apple Health and HealthKit for comprehensive health data management.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Apple Watch Development</h3>
+                    <p>Specialized expertise in creating compelling watchOS applications that enhance user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <h3>App Store Optimization</h3>
+                    <p>Strategic guidance on app store presence, marketing, and user acquisition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="apps">
+        <div class="section-container">
+            <h2>Our Apps</h2>
+            
+            <!-- Toothify App -->
+            <div class="app-showcase app-showcase-1">
+                <div class="app-content">
+                    <h3>
+                        <img src="images/toothify-icon.png" alt="Toothify app icon" class="app-icon">
+                        Toothify: Brush Timer & Coach
+                    </h3>
+                    <p class="app-tagline">No smart toothbrush needed!</p>
+                    <p class="app-description">Meet Toothify - your Apple Watch's secret mission: cleaner teeth. Toothify actually coaches you, breaking your 2 or more minutes into perfectly timed zones with gentle wrist buzzes to keep your brushing even, effective, and phone-free.</p>
+                    <ul class="app-features">
+                        <li><strong>Tooth-by-Tooth Coaching:</strong> Custom zone pacing with haptic cues</li>
+                        <li><strong>Use Any Toothbrush:</strong> Electric, manual, or any type</li>
+                        <li><strong>Hands-Free & Sink-Safe:</strong> No phone balancing acts</li>
+                        <li><strong>Apple Health Integration:</strong> Automatically logs your brushing streaks</li>
+                        <li><strong>One-Time Purchase:</strong> No subscriptions</li>
+                    </ul>
+                </div>
+                <div class="app-image">
+                    <img src="images/toothify.png" alt="Toothify Apple Watch brushing coach app screenshot" class="app-screenshot">
+                    <div class="app-store-row">
+                        <a href="https://apps.apple.com/app/toothify/id6745478633" target="_blank" class="app-link app-store-link">
+                            <img src="images/app_store.svg" alt="Download Toothify on the App Store" class="app-store-badge">
+                        </a>
+                        <a href="https://toothify.app" target="_blank" class="app-link app-learn-link">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Harvee App -->
+            <div class="app-showcase app-showcase-2">
+                <div class="app-image">
+                    <img src="images/harvee.png" alt="Harvee stress and HRV monitoring app screenshot" class="app-screenshot">
+                    <div class="app-store-row">
+                        <a href="https://apps.apple.com/us/app/id6746194884" target="_blank" class="app-link app-store-link">
+                            <img src="images/app_store.svg" alt="Download Harvee on the App Store" class="app-store-badge">
+                        </a>
+                        <a href="https://harvee.app" target="_blank" class="app-link app-learn-link">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="app-content">
+                    <h3>
+                        <img src="images/harvee-icon.png" alt="Harvee app icon" class="app-icon">
+                        Watch Stress Monitor Harvee
+                    </h3>
+                    <p class="app-tagline">HRV & Smart Recovery Tracker</p>
+                    <p class="app-description">Uncover the mystery of stress and take charge of your body's recovery with Harvee! Track stress levels, HRV, sleep, activity, mindfulness, and more. Get real-time alerts, personalized tips, and actionable plans to boost your resilience.</p>
+                    <ul class="app-features">
+                        <li><strong>Body Stress Tracking:</strong> See your average stress and stress heat maps</li>
+                        <li><strong>HRV Insights:</strong> Personalized recovery recommendations</li>
+                        <li><strong>Comprehensive Tracking:</strong> Sleep, exercise, activity, mindfulness, and more</li>
+                        <li><strong>Clear Insights:</strong> Easy-to-read visuals and actionable data</li>
+                        <li><strong>Privacy First:</strong> Your data stays with you</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2>Get In Touch</h2>
+            <p>Interested in contract iOS development or learning more about our apps?</p>
+            <a href="mailto:hello@peaklabs.ltd" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h4>Peak Labs</h4>
+                <p>Apple Platform Development Studio</p>
+            </div>
+            <div class="footer-links">
+                <h4>Apps</h4>
+                <ul>
+                    <li><a href="https://apps.apple.com/app/toothify/id6745478633" target="_blank">Toothify: Brush Timer & Coach</a></li>
+                    <li><a href="https://apps.apple.com/us/app/id6746194884" target="_blank">Harvee: Stress & Recovery Tracker</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#apps">Apps</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Peak Labs Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
