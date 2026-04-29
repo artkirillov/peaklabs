@@ -252,6 +252,8 @@ a:hover {
     transition: background-color 0.2s ease, transform 0.2s ease;
     cursor: pointer;
     border: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .cta-button:hover {
@@ -268,11 +270,29 @@ a:hover {
 .app-link {
     display: inline-block;
     margin-top: 1.5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .app-link:hover {
     opacity: 0.9;
     text-decoration: none;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms ease-out;
+    background-color: rgba(255, 255, 255, 0.35);
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
 }
 
 .app-store-link {
