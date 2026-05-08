@@ -590,10 +590,6 @@ a:hover {
     list-style: none;
 }
 
-.footer-links li {
-    margin-bottom: 0.75rem;
-}
-
 .footer-links a {
     font-size: var(--fs-small);
     color: var(--text-secondary);
